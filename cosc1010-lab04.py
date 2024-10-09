@@ -102,4 +102,29 @@ min_temps = [
 # For the next part, determine the highest and lowest recorded temperatures.
 # HINT: You can find this information without using any logic or looping.
 
+max_sum=0
+
+min_sum=0
+
+for max_temp in max_temps:
+    max_sum=max_sum+max_temp    
+    maximum=(max_sum/365)
+    max_temps.sort()
+#
+print(f"{maximum} was the average maximum temperature in Laramie in 2023")
+#
+print(f"{max_temps[-1]} was the highest temperature in Laramie in 2023")
+##
+for min_temp in min_temps:
+    min_sum=min_sum+min_temp
+    minimum=(min_sum/365)   
+    min_temps.sort()
+#
+print(f"{minimum} was the average minimum temperature in Laramie in 2023")
+#
+print(f"{min_temps[0]} was the lowest temperature in Laramie in 2023")
+
+
+
+
 
